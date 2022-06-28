@@ -15,8 +15,8 @@ const categoryData = ref([]) // categor数据源
 const getCategoryData = async () => {
   const { categorys } = await getCategory()
   categoryData.value = categorys
-  categoryData.value.unshift(ALL_CATEGORY_ITEM)
-  console.log(categoryData.value)
+  categoryData.value.unshift(ALL_CATEGORY_ITEM) //追加一条全部数据
+  // console.log(categoryData.value)
 }
 getCategoryData()
 </script>
